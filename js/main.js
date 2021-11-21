@@ -1,3 +1,7 @@
+const menu = [
+    "Company", "About", "Information", "News"
+]
+
 new Swiper("#wrap", {
     loop: true,
     slidesPerView: "auto",
@@ -13,6 +17,9 @@ new Swiper("#wrap", {
         el: ".swiper-pagination",
         type: "bullets",
         clickable: true,
+        renderBullet: function(index, className){
+            return `<span class='${className}'>${menu[index]}</span>`
+        }
     },
 
     effect: 'coverflow',

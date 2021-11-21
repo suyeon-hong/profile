@@ -26,4 +26,24 @@
             }
         }
     }
+    .swiper-pagination{
+        position: absolute;
+        top: 10vh;
+        left: auto;
+        right: 10vw;
+        width: auto;
+
+        span{
+            width: auto;
+            height: auto;
+            background: transparent;
+            margin-left: 50px;
+            opacity: .7;
+
+            &.swiper-pagination-bullet-active{
+                opacity: 1;
+                font-weight: bold;
+            }
+        }
+    }
 }

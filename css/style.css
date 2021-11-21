@@ -28,5 +28,20 @@ a {
         height: 100%;
         border: 1px solid #fff;
         background: rgba(0, 0, 0, 0.5); }
+  #wrap .swiper-pagination {
+    position: absolute;
+    top: 10vh;
+    left: auto;
+    right: 10vw;
+    width: auto; }
+    #wrap .swiper-pagination span {
+      width: auto;
+      height: auto;
+      background: transparent;
+      margin-left: 50px;
+      opacity: .7; }
+      #wrap .swiper-pagination span.swiper-pagination-bullet-active {
+        opacity: 1;
+        font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

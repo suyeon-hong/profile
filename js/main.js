@@ -7,6 +7,7 @@ new Swiper("#wrap", {
     slidesPerView: "auto",
     centeredSlides: true,
     spaceBetween: 50,
+    mousewheel: true,
 
     navigation:{
         nextEl: ".swiper-button-next",

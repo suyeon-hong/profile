@@ -145,6 +145,7 @@
                         }
                     }
                     .vids{
+                        display: block;
                         width: 70%;
                         height: 80%;
                         position: absolute;
@@ -167,6 +168,7 @@
                     padding: 70px 100px;
 
                     .vids{
+                        display: block;
                         width: 100%;
                         height: 100%;
                         overflow: hidden;
@@ -207,10 +209,12 @@
                             font: bold 55px/1 'arial';
                             color: #555;
                             letter-spacing: 5px;
+                            background: #b2b2b2;
                             position: absolute;
-                            top: 35px;
+                            top: 40px;
                             left: 50%;
                             transform: translateX(-50%);
+                            padding-left: 5px;
                         }
 
                         form fieldset{
@@ -249,8 +253,8 @@
                             }
                             input[type="submit"]{
                                 width: 150px;
-                                height: 50px;
-                                font: 16px/50px 'arial';
+                                height: 45px;
+                                font: 16px/45px 'arial';
                                 color: #222;
                                 border: none;
                                 position: relative;

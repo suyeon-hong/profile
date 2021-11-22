@@ -159,6 +159,54 @@ a {
           top: 100px;
           right: 50px;
           width: 150px; }
+      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div {
+        border: 2px solid #888;
+        padding: 60px 50px 30px; }
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div h1 {
+          font: bold 55px/1 'arial';
+          color: #555;
+          letter-spacing: 5px;
+          position: absolute;
+          top: 35px;
+          left: 50%;
+          transform: translateX(-50%); }
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset {
+          border: none; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset legend {
+            font-size: 0;
+            text-indent: -9999px; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset input::placeholder, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset textarea::placeholder {
+            font: 20px/1 'arial';
+            color: #555; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset input:focus, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset input:active, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset textarea:focus, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset textarea:active {
+            outline: none; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset input[type="text"], #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset input[type="email"] {
+            width: 49%;
+            height: 40px;
+            border: none;
+            padding: 5px 10px;
+            font: 20px/40px 'arial';
+            color: #000;
+            margin-bottom: 10px; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset textarea {
+            width: 100%;
+            height: 200px;
+            border: none;
+            padding: 10px;
+            font: 20px/1 'arial';
+            color: #000;
+            resize: none; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner div form fieldset input[type="submit"] {
+            width: 150px;
+            height: 50px;
+            font: 16px/50px 'arial';
+            color: #222;
+            border: none;
+            position: relative;
+            top: -15px;
+            right: 0;
+            left: calc(100% - 150px);
+            cursor: pointer; }
   #wrap .swiper-button-prev {
     top: auto;
     left: auto;

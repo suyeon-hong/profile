@@ -1,4 +1,4 @@
-const menu = ["Company", "About", "Information", "News"]
+const menu = ["Profile", "Portfolio", "Guide", "Contact"]
 
 new Swiper("#wrap", {
     loop: true,
@@ -19,14 +19,6 @@ new Swiper("#wrap", {
         renderBullet: function(index, className){
             return `<span class='${className}'>${menu[index]}</span>`
         }
-    },
-
-    effect: 'coverflow',
-    coverflowEffect:{
-        rotate: 30,
-        strech: -100,
-        depth: 400,
-        slideShadows: false,
     }
 });
 

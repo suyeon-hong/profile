@@ -27,7 +27,7 @@ a {
     opacity: 0;
     transition: 1s; }
     #wrap .bg li.on {
-      opacity: 1; }
+      opacity: 0.8; }
     #wrap .bg li:nth-of-type(1) {
       background-image: url(../img/bg1.jpg); }
     #wrap .bg li:nth-of-type(2) {
@@ -47,15 +47,93 @@ a {
       #wrap .swiper-wrapper .swiper-slide .inner {
         width: 100%;
         height: 100%;
-        border: 1px solid #fff;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 50px;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 70px 50px;
         font-size: 40px;
         color: rgba(255, 255, 255, 0.5);
-        transition: .4s; }
+        transform: scale(0.9);
+        transition: .4s;
+        overflow: hidden; }
       #wrap .swiper-wrapper .swiper-slide-active .inner {
-        background: rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(5px); }
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        transform: scale(1.1); }
+      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 0; }
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .pic {
+          width: 45%;
+          background: rgba(0, 0, 0, 0.3);
+          padding: 70px 50px; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .con {
+          width: 55%;
+          padding: 70px 50px; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .con h1 {
+            font: bold 30px/2 'arial';
+            color: #333;
+            margin-bottom: 150px; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .con h1::after {
+              content: '';
+              display: block;
+              width: 70px;
+              height: 1px;
+              background: #333; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .con p {
+            font: 15px/1.4 'arial';
+            color: #555;
+            margin-bottom: 20px; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .con ul {
+            display: flex; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .con ul li {
+              font-size: 0;
+              margin-right: 10px;
+              padding: 5px;
+              border: 1px solid #888;
+              border-radius: 50%;
+              cursor: pointer;
+              transition: .4s; }
+              #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .con ul li i {
+                font-size: 16px;
+                color: #888;
+                transition: .4s; }
+              #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .con ul li:hover {
+                border-color: #555; }
+                #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .con ul li:hover i {
+                  color: #555; }
+      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner {
+        padding: 0; }
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .top {
+          padding: 70px 50px;
+          height: 55%; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .top h1 {
+            font: bold 40px/1 'arial';
+            color: #000; }
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .bottom {
+          padding: 30px 50px;
+          height: 45%;
+          background: rgba(0, 0, 0, 0.3);
+          margin-right: 64%; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .bottom p {
+            font: 14px/1.4 'arial';
+            color: #555; }
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .vids {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 130px;
+          left: 300px;
+          overflow: hidden;
+          border: 2px solid #888; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .vids video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.2); }
   #wrap .swiper-button-prev {
     top: auto;
     left: auto;

@@ -21,7 +21,7 @@
         transition: 1s;
 
         &.on{
-            opacity: 1;
+            opacity: 0.8;
         }
         &:nth-of-type(1){background-image: url(../img/bg1.jpg);}
         &:nth-of-type(2){background-image: url(../img/bg2.jpg);}
@@ -41,17 +41,129 @@
             .inner{
                 width: 100%;
                 height: 100%;
-                border: 1px solid #fff;
-                background: rgba(0,0,0,0.5);
-                padding: 50px;
+                background: rgba(0,0,0,0.1);
+                padding: 70px 50px;
                 font-size: 40px;
                 color: rgba(255,255,255,0.5);
+                transform: scale(0.9);
                 transition: .4s;
+                overflow: hidden;
             }
             &-active .inner{
-                background: rgba(0,0,0,0.8);
+                background: rgba(0,0,0,0.3);
                 backdrop-filter: blur(5px);
+                transform: scale(1.1);
             }
+            &[data-swiper-slide-index="0"]{
+                .inner{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0;
+
+                    .pic{
+                        width: 45%;
+                        background: rgba(0,0,0,0.3);
+                        padding: 70px 50px;
+
+                        img{
+                            width: 100%;   
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .con{
+                        width: 55%;
+                        padding: 70px 50px;
+
+                        h1{
+                            font: bold 30px/2 'arial';
+                            color: #333;
+                            margin-bottom: 150px;
+
+                            &::after{
+                                content: '';
+                                display: block;
+                                width: 70px;
+                                height: 1px;
+                                background: #333;
+                            }
+                        }
+                        p{
+                            font: 15px/1.4 'arial';
+                            color: #555;
+                            margin-bottom: 20px;
+                        }
+                        ul{
+                            display: flex;
+
+                            li{
+                                font-size: 0;
+                                margin-right: 10px;
+                                padding: 5px;
+                                border: 1px solid #888;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                transition: .4s;
+
+                                i{
+                                    font-size: 16px;
+                                    color: #888;
+                                    transition: .4s;
+                                }
+                                &:hover{
+                                    border-color: #555;
+
+                                    i{color: #555}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &[data-swiper-slide-index="1"]{
+                .inner{
+                    padding: 0;
+
+                    .top{
+                        padding: 70px 50px;
+                        height: 55%;
+
+                        h1{
+                            font: bold 40px/1 'arial';
+                            color: #000;
+                        }
+                    }
+                    .bottom{
+                        padding: 30px 50px;
+                        height: 45%;
+                        background: rgba(0,0,0,0.3);
+                        margin-right: 64%;
+
+                        p{
+                            font: 14px/1.4 'arial';
+                            color: #555;
+                        }
+                    }
+                    .vids{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 130px;
+                        left: 300px;
+                        overflow: hidden;
+                        border: 2px solid #888;
+
+                        video{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+            &[data-swiper-slide-index="2"]{}
+            &[data-swiper-slide-index="3"]{}
         }
     }
     .swiper-button{

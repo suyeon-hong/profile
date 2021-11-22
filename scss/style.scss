@@ -137,7 +137,7 @@
                         padding: 30px 50px;
                         height: 45%;
                         background: rgba(0,0,0,0.3);
-                        margin-right: 64%;
+                        margin-right: 67%;
 
                         p{
                             font: 14px/1.4 'arial';
@@ -145,13 +145,13 @@
                         }
                     }
                     .vids{
-                        width: 100%;
-                        height: 100%;
+                        width: 70%;
+                        height: 80%;
                         position: absolute;
-                        top: 130px;
-                        left: 300px;
+                        right: 0;
+                        bottom: 0;
                         overflow: hidden;
-                        border: 2px solid #888;
+                        border: 1px solid #888;
 
                         video{
                             width: 100%;
@@ -162,7 +162,40 @@
                     }
                 }
             }
-            &[data-swiper-slide-index="2"]{}
+            &[data-swiper-slide-index="2"]{
+                .inner{
+                    padding: 70px 100px;
+
+                    .vids{
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        border: 1px solid #888;
+
+                        video{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            transform: scaleX(1.1);
+                        }
+                    }
+                    h1{
+                        font: bold 40px/1 'arial';
+                        color: #fff;
+                        position: absolute;
+                        left: 50px;
+                        bottom: 100px;
+                    }
+                    p{
+                        font: 12px/1.4 'arial';
+                        color: #ddd;
+                        position: absolute;
+                        top: 100px;
+                        right: 50px;
+                        width: 150px;
+                    }
+                }
+            }
             &[data-swiper-slide-index="3"]{}
         }
     }

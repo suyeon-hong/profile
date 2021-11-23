@@ -1,4 +1,4 @@
-const menu = ["Profile", "Portfolio", "Grid", "Guide", "Contact"]
+const menu = ["INTRO", "PROFILE", "PORTFOLIO", "GRID", "CONTACT"]
 
 new Swiper("#wrap", {
     loop: true,

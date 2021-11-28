@@ -59,77 +59,54 @@ $font : 'Maven Pro';
             }
             &[data-swiper-slide-index="0"]{
                 .inner{
-                    padding: 40px 50px;
-                    background: #555;
+                    position: relative;
 
-                    div{
-                        width: 100%;
+                    .profile{
+                        width: 40%;
                         height: 100%;
-                        border: 3px solid #fff;
+                        background: #555;
+                        padding: 100px 70px;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .pic{
+                            width: 120px;
+                            height: 120px;
+                            background: #fff;
+                        }
+                        p{
+                            font: 300 14px/1.4 $font;
+                            color: #fff;
+                        }
                     }
-                    h1{
-                        font: 45px/1 $font;
-                        color: #fff;
+                    ul{
+                        width: 60%;
                         position: absolute;
-                        top: 50%;
-                        left: 70px;
-                        margin-top: -60px;
-                    }
-                    h2{
-                        display: inline-block;
-                        font: 60px/1 $font;
-                        color: #fff;
-                        background: #4AD4AB;
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        padding: 30px 20px;
+                        top: 100px;
+                        right: 30px;
+                        padding: 50px;
+                        background: #fff;
+                        box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+
+                        li{
+                            &:nth-of-type(1){
+                                font: 600 50px/1 $font;
+                                color: #111;
+                                text-align: right;
+                                margin-bottom: 50px;
+                            }
+                            &:not(&:nth-of-type(1)){
+                                font: 500 20px/1 $font;
+                                color: #111;
+                                margin-bottom: 20px;
+                            }
+                        }
                     }
                 }
             }
             &[data-swiper-slide-index="1"]{
-                .inner{
-                    h1{
-                        font: 50px/2 $font;
-                        color: #4AD4AB;
-                        width: 60%;
-                        text-align: center;
-                        margin-bottom: 30px;
-                    }
-                    .pic{
-                        width: 60%;
-                        height: 100%;
-                        border-top: 10px solid #4AD4AB;
-                        background: #bbb;
-
-                        img{
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                        }
-                    }
-                    .con{
-                        position: absolute;
-                        top: 10%;
-                        right: 30px;
-                        width: 33%;
-                        height: 80%;
-                        background: #393E42;
-                        padding: 30px 20px;
-
-                        h2{
-                            font: 18px/1 $font;
-                            color: #fff;
-                            margin-bottom: 30px;
-                        }
-                        p{
-                            font: 17px/1.4 $font;
-                            color: #ddd;
-                        }
-                    }
-                }
-            }
-            &[data-swiper-slide-index="2"]{
                 .inner{
                     .tit{
                         padding: 70px 50px;
@@ -224,7 +201,7 @@ $font : 'Maven Pro';
                     }
                 }
             }
-            &[data-swiper-slide-index="3"]{
+            &[data-swiper-slide-index="2"]{
                 .inner{
                     display: flex;
 
@@ -270,7 +247,7 @@ $font : 'Maven Pro';
                     }
                 }
             }
-            &[data-swiper-slide-index="4"]{
+            &[data-swiper-slide-index="3"]{
                 .inner{
                     background: #555;
 

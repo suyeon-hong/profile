@@ -131,60 +131,95 @@ $font : 'Maven Pro';
             }
             &[data-swiper-slide-index="2"]{
                 .inner{
-                    padding: 70px;
-                    display: flex;
-                    justify-content: space-between;
+                    .tit{
+                        padding: 70px 50px;
+                        background: #333;
 
-                    article{
-                        width: 49%;
-                        height: 100%;
-                        border: 3px solid #555;
-                        position: relative;
-                        overflow: hidden;
-
-                        &:hover{
-                            .con{
-                                transform: translateY(100%);
-                                opacity: 0;
-                            }
+                        h1{
+                            font: 500 28px/1 $font;
+                            color: #fff;
+                            margin-bottom: 10px;
                         }
-                        .con{
-                            width: 100%;
-                            height: 100%;
-                            padding: 50px;
-                            background: rgba(0,0,0,0.2);
-                            transition: 1s;
+                    }
+                    .con{
+                        padding: 50px;
+                        padding-right: 60%;
+                        position: relative;
 
-                            h1{
-                                font: 400 28px/1 $font;
-                                color: #111;
-                                margin-bottom: 30px;
-    
-                                &::after{
-                                    content: '';
+                        h2{
+                            font: 300 22px/1 $font;
+                            color: #111;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            font: 100 14px/1.4 $font;
+                            color: #555;
+                        }
+                        section{
+                            width: 52%;
+                            height: 370px;
+                            position: absolute;
+                            top: -30px;
+                            right: 50px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            article{
+                                width: 48%;
+                                position: relative;
+                                overflow: hidden;
+                                background: #fff;
+                                box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+        
+                                &:hover{
+                                    .txt{
+                                        transform: translateY(100%);
+                                        opacity: 0;
+                                    }
+                                }
+                                .txt{
                                     width: 100%;
-                                    height: 1px;
-                                    background: #333;
-                                    margin-top: 20px;
+                                    height: 100%;
+                                    padding: 50px;
+                                    // background: rgba(0,0,0,0.2);
+                                    transition: 1s;
+        
+                                    h1{
+                                        font: 400 16px/1 $font;
+                                        color: #111;
+                                        text-align: center;
+                                        margin-bottom: 30px;
+            
+                                        &::after{
+                                            content: '';
+                                            width: 100%;
+                                            height: 1px;
+                                            background: #333;
+                                            margin-top: 20px;
+                                        }
+                                    }
+                                    p{
+                                        font: 100 14px/1.2 $font;
+                                        text-align: center;
+                                        color: #888;
+                                    }
+                                }
+                                a{
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: 50px;
+                                    transform: translateX(-50%);
+                                    display: block;
+                                    width: 120px;
+                                    height: 30px;
+                                    background: #555;
+                                    font: 400 14px/30px $font;
+                                    color: #ddd;
+                                    text-align: center;
+
+                                    &:hover{background: #333;}
                                 }
                             }
-                            p{
-                                font: 100 15px/1.6 $font;
-                                color: #888;
-                            }
-                        }
-                        a{
-                            position: absolute;
-                            left: 50%;
-                            bottom: 50px;
-                            transform: translateX(-50%);
-                            display: block;
-                            width: 150px;
-                            height: 40px;
-                            background: #555;
-                            font: 400 19px/40px $font;
-                            color: #ddd;
-                            text-align: center;
                         }
                     }
                 }

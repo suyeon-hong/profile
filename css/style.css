@@ -150,26 +150,36 @@ a {
       #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner {
         display: flex; }
         #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con {
-          width: 40%;
+          width: 50%;
           height: 100%;
-          background: #4AD4AB;
-          padding: 20px 30px; }
+          padding: 100px 70px;
+          position: relative; }
           #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con h1 {
-            font: 40px/1 "Maven Pro";
-            color: #fff;
-            text-align: center;
-            margin-bottom: 50px; }
+            font: 600 40px/1.2 "Maven Pro";
+            color: #111;
+            margin-bottom: 20px; }
           #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con p {
-            font: 18px/1.4 "Maven Pro";
-            color: #ddd; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .pic {
-          width: 55%;
-          height: 100%;
-          background: #555; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .pic img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; }
+            font: 300 14px/1.4 "Maven Pro";
+            color: #555; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con div {
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            width: 90%;
+            height: 120px;
+            padding: 30px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con div h2 {
+              font: 300 12px/1 "Maven Pro";
+              color: #555;
+              margin-bottom: 20px; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con div h3 {
+              font: 500 16px/1 "Maven Pro";
+              color: #111; }
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner a {
+          display: block;
+          width: 45%;
+          background: #bbb; }
       #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner {
         background: #555; }
         #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner h1 {

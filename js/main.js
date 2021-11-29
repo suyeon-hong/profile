@@ -48,3 +48,16 @@ function activation(){
     }
     bgs[i].classList.add("on");
 }
+
+
+const vids = document.querySelectorAll("video");
+
+for(let el of vids){
+    el.addEventListener("mouseenter", ()=>{
+        el.play();
+    });
+    el.addEventListener("mouseleave", ()=>{
+        el.pause();
+        el.currentTime = 0;
+    });
+}

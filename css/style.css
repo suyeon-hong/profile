@@ -117,14 +117,14 @@ a {
             overflow: hidden;
             background: #fff;
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3); }
-            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con section article:hover .txt {
-              transform: translateY(100%);
-              opacity: 0; }
             #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con section article .txt {
               width: 100%;
               height: 100%;
-              padding: 50px;
-              transition: 1s; }
+              padding: 40px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center; }
               #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con section article .txt h1 {
                 font: 400 16px/1 "Maven Pro";
                 color: #111;
@@ -136,24 +136,24 @@ a {
                   height: 1px;
                   background: #333;
                   margin-top: 20px; }
-              #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con section article .txt p {
-                font: 100 14px/1.2 "Maven Pro";
-                text-align: center;
-                color: #888; }
-            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con section article a {
+              #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con section article .txt a {
+                display: inline-block;
+                width: 120px;
+                height: 30px;
+                background: #555;
+                font: 400 14px/30px "Maven Pro";
+                color: #ddd;
+                text-align: center; }
+                #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con section article .txt a:hover {
+                  background: #333; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con section article video {
+              width: 100%;
+              height: 180px;
+              object-fit: contain;
               position: absolute;
-              left: 50%;
-              bottom: 50px;
-              transform: translateX(-50%);
-              display: block;
-              width: 120px;
-              height: 30px;
-              background: #555;
-              font: 400 14px/30px "Maven Pro";
-              color: #ddd;
-              text-align: center; }
-              #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con section article a:hover {
-                background: #333; }
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%); }
       #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner {
         display: flex; }
         #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con {

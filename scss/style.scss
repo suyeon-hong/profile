@@ -147,19 +147,15 @@ $font : 'Maven Pro';
                                 overflow: hidden;
                                 background: #fff;
                                 box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
-        
-                                &:hover{
-                                    .txt{
-                                        transform: translateY(100%);
-                                        opacity: 0;
-                                    }
-                                }
+
                                 .txt{
                                     width: 100%;
                                     height: 100%;
-                                    padding: 50px;
-                                    // background: rgba(0,0,0,0.2);
-                                    transition: 1s;
+                                    padding: 40px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: center;
         
                                     h1{
                                         font: 400 16px/1 $font;
@@ -175,26 +171,26 @@ $font : 'Maven Pro';
                                             margin-top: 20px;
                                         }
                                     }
-                                    p{
-                                        font: 100 14px/1.2 $font;
+                                    a{
+                                        display: inline-block;
+                                        width: 120px;
+                                        height: 30px;
+                                        background: #555;
+                                        font: 400 14px/30px $font;
+                                        color: #ddd;
                                         text-align: center;
-                                        color: #888;
+
+                                        &:hover{background: #333;}
                                     }
                                 }
-                                a{
+                                video{
+                                    width: 100%;
+                                    height: 180px;
+                                    object-fit: contain;
                                     position: absolute;
-                                    left: 50%;
-                                    bottom: 50px;
-                                    transform: translateX(-50%);
-                                    display: block;
-                                    width: 120px;
-                                    height: 30px;
-                                    background: #555;
-                                    font: 400 14px/30px $font;
-                                    color: #ddd;
-                                    text-align: center;
-
-                                    &:hover{background: #333;}
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translateY(-50%);
                                 }
                             }
                         }

@@ -58,6 +58,5 @@ for(let el of vids){
     });
     el.addEventListener("mouseleave", ()=>{
         el.pause();
-        el.currentTime = 0;
     });
 }

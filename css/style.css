@@ -65,10 +65,16 @@ a {
       #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner {
         padding: 20px 0;
         background: #ddd; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .pic {
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .box {
           width: 70%;
           height: 100%;
-          background: #888; }
+          background: #888;
+          display: flex;
+          align-items: flex-end;
+          padding: 70px 300px 70px 30px; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .box p {
+            font: 500 12px/1.4 "Maven Pro";
+            color: #000; }
         #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner h1 {
           width: 200px;
           font: 600 70px/1 "Maven Pro";

@@ -9,3 +9,9 @@ ul, ol{
 a{
     text-decoration: none;
 }
+
+input, textarea{
+    &:focus{
+        outline: none;
+    }
+}

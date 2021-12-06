@@ -27,10 +27,11 @@ $font : 'Maven Pro';
         &.on{
             opacity: .7;
         }
-        &:nth-of-type(1){background-image: url(../img/bg1.jpg);}
-        &:nth-of-type(2){background-image: url(../img/bg2.jpg);}
-        &:nth-of-type(3){background-image: url(../img/bg3.jpg)}
-        &:nth-of-type(4){background-image: url(../img/bg4.jpg)}
+        &:nth-of-type(1){background-image: url(../img/bg1.jpg)}
+        &:nth-of-type(2){background-image: url(../img/bg2.jpg)}
+        &:nth-of-type(3){background-image: url(../img/bg2.jpg)}
+        &:nth-of-type(4){background-image: url(../img/bg3.jpg)}
+        &:nth-of-type(5){background-image: url(../img/bg4.jpg)}
     }
     .swiper-wrapper{
         width: 100%;
@@ -105,187 +106,236 @@ $font : 'Maven Pro';
                     }
                 }
             }
-            &[data-swiper-slide-index="1"]{
-                .inner{
-                    .tit{
-                        padding: 70px 50px;
-                        background: #333;
-
-                        h1{
-                            font: 500 28px/1 $font;
-                            color: #fff;
-                            margin-bottom: 10px;
-                        }
-                    }
-                    .con{
-                        padding: 50px;
-                        padding-right: 60%;
-                        position: relative;
-
-                        h2{
-                            font: 300 22px/1 $font;
-                            color: #111;
-                            margin-bottom: 20px;
-                        }
-                        p{
-                            font: 100 14px/1.4 $font;
-                            color: #555;
-                        }
-                        section{
-                            width: 52%;
-                            height: 370px;
-                            position: absolute;
-                            top: -30px;
-                            right: 50px;
-                            display: flex;
-                            justify-content: space-between;
-
-                            article{
-                                width: 48%;
-                                position: relative;
-                                overflow: hidden;
-                                background: #fff;
-                                box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
-
-                                .txt{
-                                    width: 100%;
-                                    height: 100%;
-                                    padding: 40px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                    align-items: center;
-        
-                                    h1{
-                                        font: 400 16px/1 $font;
-                                        color: #111;
-                                        text-align: center;
-                                        margin-bottom: 30px;
-            
-                                        &::after{
-                                            content: '';
-                                            width: 100%;
-                                            height: 1px;
-                                            background: #333;
-                                            margin-top: 20px;
-                                        }
-                                    }
-                                    a{
-                                        display: inline-block;
-                                        width: 120px;
-                                        height: 30px;
-                                        background: #555;
-                                        font: 400 14px/30px $font;
-                                        color: #ddd;
-                                        text-align: center;
-
-                                        &:hover{background: #333;}
-                                    }
-                                }
-                                video{
-                                    width: 100%;
-                                    height: 180px;
-                                    object-fit: contain;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 0;
-                                    transform: translateY(-50%);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            &[data-swiper-slide-index="2"]{
+            &[data-swiper-slide-index="1"], &[data-swiper-slide-index="2"]{
                 .inner{
                     display: flex;
 
-                    .con{
+                    .pic{
                         width: 50%;
                         height: 100%;
-                        padding: 100px 70px;
+                        border-right: 1px solid #888;
                         position: relative;
+                        overflow: hidden;
 
-                        h1{
-                            font: 600 40px/1.2 $font;
-                            color: #111;
-                            margin-bottom: 30px;
-
-                            span{
-                                display: block;
-                                font-size: 30px;
-                            }
-                        }
-                        p{
-                            font: 300 14px/1.4 $font;
-                            color: #555;
-                        }
-                        div{
-                            position: absolute;
-                            bottom: 100px;
-                            left: 0;
-                            width: 90%;
-                            height: 120px;
-                            padding: 30px;
-                            padding-left: 70px;
-                            box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
-
-                            &::before{
-                                content: '';
-                                display: block;
-                                width: 50px;
-                                height: 100%;
-                                background: #333;
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                            }
-                            h2{
-                                font: 300 12px/1 $font;
-                                color: #555;
-                                margin-bottom: 20px;
-                            }
-                            a{
-                                font: 500 16px/1 $font;
-                                color: #111;
-                            }
-                        }
-                    }
-                    .pic{
-                        display: block;
-                        width: 45%;
-                        height: 100%;
-                        background: #333;
-                        position: relative;
-
-                        &:hover{
-                            img{
-                                opacity: 0;
-                            }
-                            video{
-                                opacity: 1;
-                            }
-                        }
                         img{
                             width: 100%;
-                            height: 100%;
-                            object-fit: contain;
-                            transition: .6s;
-                        }
-                        video{
                             position: absolute;
                             top: 0;
                             left: 0;
+                            animation: scrolling 8s ease-in-out infinite;
+                        }
+                    }
+                    .con{
+                        width: 50%;
+                        height: 100%;
+                        padding: 50px 30px 30px;
+                        position: relative;
+
+                        span{
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            font: 300 11px/1 $font;
+                            color: #111;
+                        }
+                        h1{
+                            font: 600 60px/1 $font;
+                            color: #111;
+                            margin-bottom: 5px;
+
+                            &::after{
+                                content: '';
+                                display: block;
+                                width: 110%;
+                                height: 1px;
+                                background: #000;
+                                margin-top: 10px;
+                            }
+                        }
+                        h2{
+                            font: 300 11px/1 $font;
+                            color: #333;
+                            margin-bottom: 30px;
+                        }
+                        >p{
+                            font: 500 11px/1.4 $font;
+                            color: #555;
+                            margin-bottom: 30px;
+                        }
+                        h3{
+                            font: 300 12px/1 $font;
+                            color: #333;
+                            margin-left: 30%;
+                            margin-bottom: 15px;
+
+                            &::after{
+                                content: '';
+                                display: block;
+                                width: 110%;
+                                height: 1px;
+                                background: #555;
+                                margin-top: 2px;
+                            }
+                        }
+                        ul{
+                            display: flex;
+                            margin-left: 30%;
+                            margin-bottom: 20px;
+
+                            li{
+                                width: 50%;
+
+                                a{
+                                    display: flex;
+                                    margin-bottom: 10px;
+
+                                    i{
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 50%;
+                                        border: 1px solid #888;
+                                        font-size: 18px;
+                                        line-height: 28px;
+                                        text-align: center;
+                                        color: #555;
+                                        margin-right: 10px;
+                                    }
+                                    .txt{
+                                        h4{
+                                            font: 400 11px/1 $font;
+                                            color: #222;
+                                            margin-bottom: 2px;
+                                        }
+                                        p{
+                                            font: 300 11px/1 $font;
+                                            color: #555;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        video{
                             width: 100%;
-                            height: 100%;
-                            object-fit: contain;
-                            opacity: 0;
-                            transition: .6s;
+                            height: 200px;
+                            object-fit: cover;
+                            border: 1px solid #888;
                         }
                     }
                 }
             }
             &[data-swiper-slide-index="3"]{
+                .inner{
+                    .pic{
+                        width: 100%;
+                        height: 78%;
+                        background: #000;
+                        position: relative;
+                        overflow: hidden;
+                        margin-bottom: 20px;
+
+                        &:hover{
+                            img{opacity: 0;}
+                        }
+                        img{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            object-fit: cover;
+                            transition: 1s;
+                        }
+                        video{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    span{
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        font: 300 11px/1 $font;
+                        color: #fff;
+                    }
+                    .con{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        padding: 0 30px;
+
+                        .left{
+                            width: 20%;
+
+                            h1{
+                                font: 600 30px/1 $font;
+                                color: #111;
+                                margin-bottom: 15px;
+
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width: 156%;
+                                    height: 1px;
+                                    background: #000;
+                                    margin-top: 5px;
+                                    position: relative;
+                                    left: -100px;
+                                }
+                            }
+                            ul{
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+    
+                                li{
+                                    width: 50%;
+
+                                    a{
+                                        display: flex;
+        
+                                        i{
+                                            width: 24px;
+                                            height: 24px;
+                                            border-radius: 50%;
+                                            border: 1px solid #888;
+                                            font-size: 14px;
+                                            line-height: 22px;
+                                            color: #333;
+                                            text-align: center;
+                                            margin-right: 5px;
+                                        }
+                                        .txt{
+                                            h4{
+                                                font: 300 11px/1 $font;
+                                                color: #333;
+                                            }
+                                            p{
+                                                font: 300 11px/1 $font;
+                                                color: #555;
+                                            }
+                                        }
+                                    }
+                                } 
+                            }
+                        }
+                        .right{
+                            width: 60%;
+                            padding-top: 10px;
+
+                            h2{
+                                font: 600 14px/1 $font;
+                                color: #333;
+                                margin-bottom: 10px;
+                            }
+                            p{
+                                font: 300 12px/1.4 $font;
+                                color: #555;
+                            }
+                        }
+                    }
+                }
+            }
+            &[data-swiper-slide-index="4"]{
                 .inner{
                     background: #333;
 
@@ -362,4 +412,13 @@ $font : 'Maven Pro';
             }
         }
     }
+}
+
+
+@keyframes scrolling{
+    0%{top: 0%}
+    20%{top: 0%}
+    50%{top: -138%}
+    70%{top: -138%}
+    100%{top: 0%}
 }

@@ -58,9 +58,14 @@ $font : 'Maven Pro';
                     opacity: 1;
                     transform: scale(1.1);
                 }
-                &[data-swiper-slide-index="1"], &[data-swiper-slide-index="2"]{
+                &[data-swiper-slide-index="1"]{
                     .inner .pic img{
-                        animation: scrolling 8s ease-in-out infinite;
+                        animation: scrolling1 8s ease-in-out infinite;
+                    }
+                }
+                &[data-swiper-slide-index="2"]{
+                    .inner .pic img{
+                        animation: scrolling2 8s ease-in-out infinite;
                     }
                 }
             }
@@ -231,7 +236,14 @@ $font : 'Maven Pro';
             &[data-swiper-slide-index="2"]{
                 .inner .con{
                     >p{margin-bottom: 50px;}
-                    ul{margin-bottom: 30px;}
+                    h3{margin-bottom: 10px;}
+                    ul{
+                        margin-bottom: 30px;
+
+                        li a .txt h4{
+                            line-height: 30px;
+                        }
+                    }
                 }
             }
             &[data-swiper-slide-index="3"]{
@@ -473,10 +485,18 @@ $font : 'Maven Pro';
 }
 
 
-@keyframes scrolling{
+@keyframes scrolling1{
     0%{top: 0%}
     20%{top: 0%}
-    50%{top: -140%}
-    70%{top: -140%}
+    50%{top: -190%}
+    70%{top: -190%}
+    100%{top: 0%}
+}
+
+@keyframes scrolling2{
+    0%{top: 0%}
+    20%{top: 0%}
+    50%{top: -200%}
+    70%{top: -200%}
     100%{top: 0%}
 }

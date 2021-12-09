@@ -183,10 +183,16 @@ input:focus, textarea:focus {
                   font: 300 11px/1 "Maven Pro";
                   color: #555; }
           #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con video, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con video {
-            width: 100%;
+            width: 80%;
             height: 200px;
             object-fit: cover;
+            margin: 0 auto;
+            display: block;
             border: 1px solid #888; }
+      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con > p {
+        margin-bottom: 50px; }
+      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con ul {
+        margin-bottom: 30px; }
       #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .pic {
         width: 100%;
         height: 78%;

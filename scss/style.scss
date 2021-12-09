@@ -218,12 +218,20 @@ $font : 'Maven Pro';
                             }
                         }
                         video{
-                            width: 100%;
+                            width: 80%;
                             height: 200px;
                             object-fit: cover;
+                            margin: 0 auto;
+                            display: block;
                             border: 1px solid #888;
                         }
                     }
+                }
+            }
+            &[data-swiper-slide-index="2"]{
+                .inner .con{
+                    >p{margin-bottom: 50px;}
+                    ul{margin-bottom: 30px;}
                 }
             }
             &[data-swiper-slide-index="3"]{

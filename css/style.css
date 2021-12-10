@@ -92,11 +92,11 @@ input:focus, textarea:focus {
             content: '';
             display: block;
             width: 1px;
-            height: 240px;
+            height: 255px;
             background: #111;
             position: absolute;
             left: 20px;
-            top: -240px; }
+            top: -255px; }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1::after {
             content: 'Suyeon Hong';
             display: block;
@@ -203,7 +203,7 @@ input:focus, textarea:focus {
         background: #000;
         position: relative;
         overflow: hidden;
-        margin-bottom: 20px; }
+        margin-bottom: 30px; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic:hover img {
           opacity: 0; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic img {
@@ -226,10 +226,10 @@ input:focus, textarea:focus {
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con {
         width: 100%;
         display: flex;
-        justify-content: space-around;
-        padding: 0 30px; }
+        justify-content: space-between;
+        padding: 0 50px; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left {
-          width: 20%; }
+          width: 25%; }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left h1 {
             font: 600 30px/1 "Maven Pro";
             color: #111;
@@ -247,26 +247,24 @@ input:focus, textarea:focus {
             width: 100%;
             display: flex;
             justify-content: space-between; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li {
-              width: 50%; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a {
-                display: flex; }
-                #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a i {
-                  width: 24px;
-                  height: 24px;
-                  border-radius: 50%;
-                  border: 1px solid #888;
-                  font-size: 14px;
-                  line-height: 22px;
-                  color: #333;
-                  text-align: center;
-                  margin-right: 5px; }
-                #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt h4 {
-                  font: 300 11px/1 "Maven Pro";
-                  color: #333; }
-                #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt p {
-                  font: 300 11px/1 "Maven Pro";
-                  color: #555; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a {
+              display: flex; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a i {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                border: 1px solid #888;
+                font-size: 14px;
+                line-height: 22px;
+                color: #333;
+                text-align: center;
+                margin-right: 5px; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt h4 {
+                font: 300 11px/1 "Maven Pro";
+                color: #333; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt p {
+                font: 300 11px/1 "Maven Pro";
+                color: #555; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right {
           width: 60%;
           padding-top: 10px; }
@@ -395,6 +393,8 @@ input:focus, textarea:focus {
   #wrap .swiper-wrapper .swiper-slide-active[data-custom-index="2"] .inner .pic img {
     animation-name: scrolling2_3; } }
 @media screen and (max-width: 1200px) {
+  #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box {
+    padding: 70px 100px 70px 30px; }
   #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h1, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h1 {
     font-size: 50px; }
     #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h1::after, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h1::after {
@@ -407,6 +407,29 @@ input:focus, textarea:focus {
     animation-name: scrolling1_4; }
   #wrap .swiper-wrapper .swiper-slide-active[data-custom-index="2"] .inner .pic img {
     animation-name: scrolling2_4; } }
+@media screen and (max-width: 980px) {
+  #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box {
+    width: 80%; }
+  #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1 {
+    font-size: 50px;
+    left: 70%; }
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1::before {
+      height: 275px;
+      top: -275px; }
+  #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .pic, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .pic {
+    display: none; }
+  #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con {
+    width: 100%; }
+  #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con {
+    padding: 0 30px; }
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left {
+      width: 30%; }
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left h1 {
+        font-size: 24px; }
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right {
+      width: 65%; }
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right p {
+        font-size: 11px; } }
 @keyframes scrolling1 {
   0% {
     top: 0%; }

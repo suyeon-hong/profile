@@ -528,7 +528,7 @@ $font : 'Maven Pro';
                 &[data-custom-index="0"]{
                     .inner{
                         .box{
-                            padding: 70px 100px 70px 30px;
+                            padding-right: 100px;
                         }
                     }
                 }
@@ -633,7 +633,7 @@ $font : 'Maven Pro';
                 &[data-custom-index="0"]{
                     .inner{
                         .box{
-                            padding: 70px 50px 70px 30px;
+                            padding-right: 50px;
                         }
                         h1{
                             font-size: 36px;
@@ -721,6 +721,113 @@ $font : 'Maven Pro';
                 font-size: 14px;
                 margin-left: 20px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #wrap{
+        .swiper-wrapper{
+            .swiper-slide{
+                height: 75vh;
+                top: 12vh;
+
+                &[data-custom-index="0"]{
+                    .inner{
+                        .box{padding-right: 30px;}
+                        h1{
+                            left: 60%;
+                            top: 20%;
+                        }
+                    }
+                }
+                &[data-custom-index="1"], &[data-custom-index="2"]{
+                    .inner .con{
+                        padding: 30px;
+
+                        span{font-size: 10px;}
+                        h1{font-size: 40px;}
+                        h2{
+                            margin-bottom: 20px;
+                            font-size: 10px;
+                            line-height: 1.2;
+                        }
+                        >p{margin-bottom: 20px;}
+                        h3{margin-left: 10%;margin-bottom: 10px;}
+                        ul{
+                            margin-left: 10%;
+                            margin-bottom: 10px;
+
+                            li a{
+                                i{
+                                    font-size: 12px;
+                                    width: 22px;
+                                    height: 22px;
+                                    line-height: 22px;
+                                }
+                                .txt h4{margin-bottom: 0;}
+                            }
+                        }
+                        video{
+                            height: 150px;
+                        }
+                    }
+                }
+                &[data-custom-index="3"]{
+                    .inner{
+                        .pic{
+                            height: 50%;
+                            margin-bottom: 20px;
+                        }
+                        .con{
+                            .left{
+                                width: 70%;
+                                margin-bottom: 10px;
+
+                                ul li a i{
+                                    font-size: 12px;
+                                    width: 22px;
+                                    height: 22px;
+                                    line-height: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &[data-custom-index="4"]{
+                    .inner{
+                        .contact{
+                            height: 90%;
+                            top: 5%;
+
+                            h1{font-size: 18px;}
+                            h2{font-size: 14px;margin-bottom: 70px;}
+                            label{font-size: 12px;margin-bottom: 0;}
+                            input[type=text], textarea{
+                                font-size: 12px;
+                                padding: 5px;
+                            }
+                            input[type=submit]{
+                                width: 80px;
+                                height: 25px;
+                                line-height: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination{
+            top: 2vh;
+
+            span{
+                font-size: 13px;
+                margin-left: 10px;
+            }
+        }
+        .swiper-button-prev, .swiper-button-next{
+            bottom: 2vh;
+            transform: scale(0.6);
         }
     }
 }

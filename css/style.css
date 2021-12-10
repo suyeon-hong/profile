@@ -47,9 +47,9 @@ input:focus, textarea:focus {
     width: 100%;
     height: 100%; }
     #wrap .swiper-wrapper .swiper-slide {
-      width: 60vw;
-      height: 65vh;
-      top: 18vh; }
+      width: 70vw;
+      height: 70vh;
+      top: 15vh; }
       #wrap .swiper-wrapper .swiper-slide .inner {
         width: 100%;
         height: 100%;
@@ -63,24 +63,24 @@ input:focus, textarea:focus {
       #wrap .swiper-wrapper .swiper-slide-active .inner {
         opacity: 1;
         transform: scale(1.1); }
-      #wrap .swiper-wrapper .swiper-slide-active[data-swiper-slide-index="1"] .inner .pic img {
+      #wrap .swiper-wrapper .swiper-slide-active[data-custom-index="1"] .inner .pic img {
         animation: scrolling1 8s ease-in-out infinite; }
-      #wrap .swiper-wrapper .swiper-slide-active[data-swiper-slide-index="2"] .inner .pic img {
+      #wrap .swiper-wrapper .swiper-slide-active[data-custom-index="2"] .inner .pic img {
         animation: scrolling2 8s ease-in-out infinite; }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner {
         padding: 20px 0;
         background: #ddd; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .box {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box {
           width: 70%;
           height: 100%;
           background: #888;
           display: flex;
           align-items: flex-end;
           padding: 70px 300px 70px 30px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .box p {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box p {
             font: 500 12px/1.4 "Maven Pro";
             color: #000; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner h1 {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1 {
           width: 200px;
           font: 600 70px/1 "Maven Pro";
           color: #111;
@@ -88,7 +88,7 @@ input:focus, textarea:focus {
           top: 50%;
           left: 65%;
           transform: translateY(-50%); }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner h1::before {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1::before {
             content: '';
             display: block;
             width: 1px;
@@ -97,77 +97,77 @@ input:focus, textarea:focus {
             position: absolute;
             left: 20px;
             top: -240px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner h1::after {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1::after {
             content: 'Suyeon Hong';
             display: block;
             font: 600 13px/1 "Maven Pro";
             color: #555;
             text-align: center; }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner {
         display: flex; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .pic, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .pic {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .pic, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .pic {
           width: 50%;
           height: 100%;
           border-right: 1px solid #888;
           position: relative;
           overflow: hidden; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .pic img, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .pic img {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .pic img, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .pic img {
             width: 100%;
             position: absolute;
             top: 0;
             left: 0; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con {
           width: 50%;
           height: 100%;
           padding: 50px 30px 30px;
           position: relative; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con span, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con span {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con span, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con span {
             position: absolute;
             top: 10px;
             right: 10px;
             font: 300 11px/1 "Maven Pro";
             color: #111; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con h1, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con h1 {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h1, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h1 {
             font: 600 60px/1 "Maven Pro";
             color: #111;
             margin-bottom: 5px; }
-            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con h1::after, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con h1::after {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h1::after, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h1::after {
               content: '';
               display: block;
               width: 110%;
               height: 1px;
               background: #000;
               margin-top: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con h2, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con h2 {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h2, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h2 {
             font: 300 11px/1 "Maven Pro";
             color: #333;
             margin-bottom: 30px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con > p, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con > p {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con > p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con > p {
             font: 500 11px/1.4 "Maven Pro";
             color: #555;
-            margin-bottom: 30px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con h3, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con h3 {
+            margin-bottom: 50px; }
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h3, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h3 {
             font: 300 12px/1 "Maven Pro";
             color: #333;
             margin-left: 30%;
             margin-bottom: 15px; }
-            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con h3::after, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con h3::after {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h3::after, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h3::after {
               content: '';
               display: block;
               width: 110%;
               height: 1px;
               background: #555;
               margin-top: 2px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con ul, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con ul {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul {
             display: flex;
             margin-left: 30%;
             margin-bottom: 20px; }
-            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con ul li, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con ul li {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li {
               width: 50%; }
-              #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con ul li a, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con ul li a {
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a {
                 display: flex;
                 margin-bottom: 10px; }
-                #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con ul li a i, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con ul li a i {
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a i, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a i {
                   width: 30px;
                   height: 30px;
                   border-radius: 50%;
@@ -177,66 +177,64 @@ input:focus, textarea:focus {
                   text-align: center;
                   color: #555;
                   margin-right: 10px; }
-                #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con ul li a .txt h4 {
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a .txt h4 {
                   font: 400 11px/1 "Maven Pro";
                   color: #222;
                   margin-bottom: 2px; }
-                #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con ul li a .txt p, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con ul li a .txt p {
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a .txt p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a .txt p {
                   font: 300 11px/1 "Maven Pro";
                   color: #555; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .con video, #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con video {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con video, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con video {
             width: 80%;
-            height: 200px;
+            height: 250px;
             object-fit: cover;
             margin: 0 auto;
             display: block;
             border: 1px solid #888; }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con > p {
-        margin-bottom: 50px; }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con h3 {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h3 {
         margin-bottom: 10px; }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con ul {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul {
         margin-bottom: 30px; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .con ul li a .txt h4 {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a .txt h4 {
           line-height: 30px; }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .pic {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic {
         width: 100%;
         height: 78%;
         background: #000;
         position: relative;
         overflow: hidden;
         margin-bottom: 20px; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .pic:hover img {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic:hover img {
           opacity: 0; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .pic img {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic img {
           position: absolute;
           top: 0;
           left: 0;
           width: 100%;
           object-fit: cover;
           transition: 1s; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .pic video {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic video {
           width: 100%;
           height: 100%;
           object-fit: contain; }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner span {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner span {
         position: absolute;
         top: 10px;
         right: 10px;
         font: 300 11px/1 "Maven Pro";
         color: #fff; }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con {
         width: 100%;
         display: flex;
         justify-content: space-around;
         padding: 0 30px; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .left {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left {
           width: 20%; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .left h1 {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left h1 {
             font: 600 30px/1 "Maven Pro";
             color: #111;
             margin-bottom: 15px; }
-            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .left h1::after {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left h1::after {
               content: '';
               display: block;
               width: 156%;
@@ -245,15 +243,15 @@ input:focus, textarea:focus {
               margin-top: 5px;
               position: relative;
               left: -100px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .left ul {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul {
             width: 100%;
             display: flex;
             justify-content: space-between; }
-            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .left ul li {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li {
               width: 50%; }
-              #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .left ul li a {
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a {
                 display: flex; }
-                #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .left ul li a i {
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a i {
                   width: 24px;
                   height: 24px;
                   border-radius: 50%;
@@ -263,29 +261,29 @@ input:focus, textarea:focus {
                   color: #333;
                   text-align: center;
                   margin-right: 5px; }
-                #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .left ul li a .txt h4 {
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt h4 {
                   font: 300 11px/1 "Maven Pro";
                   color: #333; }
-                #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .left ul li a .txt p {
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt p {
                   font: 300 11px/1 "Maven Pro";
                   color: #555; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .right {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right {
           width: 60%;
           padding-top: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .right h2 {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right h2 {
             font: 600 14px/1 "Maven Pro";
             color: #333;
             margin-bottom: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .con .right p {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right p {
             font: 300 12px/1.4 "Maven Pro";
             color: #555; }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner {
         background: #888; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner .bg {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .bg {
           width: 100%;
           height: 40%;
           background: #fff; }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner .contact {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .contact {
           width: 90%;
           height: 80%;
           position: absolute;
@@ -295,15 +293,15 @@ input:focus, textarea:focus {
           background: #fff;
           box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
           text-align: center; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner .contact h1 {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .contact h1 {
             font: 400 36px/1 "Maven Pro";
             color: #111;
             margin-bottom: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner .contact h2 {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .contact h2 {
             font: 400 24px/1 "Maven Pro";
             color: #333;
             margin-bottom: 50px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner .contact label {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .contact label {
             width: 80%;
             margin: 0 auto;
             display: block;
@@ -311,7 +309,7 @@ input:focus, textarea:focus {
             color: #555;
             text-align: left;
             margin-bottom: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner .contact input[type=email] {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .contact input[type=email] {
             width: 80%;
             margin: 0 auto;
             height: 30px;
@@ -321,7 +319,7 @@ input:focus, textarea:focus {
             font: 600 14px/1 "Maven Pro";
             color: #333;
             padding: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner .contact textarea {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .contact textarea {
             display: block;
             width: 80%;
             margin: 0 auto;
@@ -333,7 +331,7 @@ input:focus, textarea:focus {
             font: 600 14px/1 "Maven Pro";
             color: #333;
             padding: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner .contact input[type=submit] {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .contact input[type=submit] {
             display: inline-block;
             width: 130px;
             height: 34px;
@@ -345,7 +343,7 @@ input:focus, textarea:focus {
             border: 1px solid #888;
             cursor: pointer;
             transition: .6s; }
-            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="4"] .inner .contact input[type=submit]:hover {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .contact input[type=submit]:hover {
               color: #fff;
               background: #888; }
   #wrap .swiper-button-prev {
@@ -378,15 +376,79 @@ input:focus, textarea:focus {
         opacity: 1;
         font-weight: bold; }
 
+@media screen and (max-width: 1600px) {
+  #wrap .swiper-wrapper .swiper-slide {
+    width: 80vw; }
+    #wrap .swiper-wrapper .swiper-slide-active[data-custom-index="1"] .inner .pic img {
+      animation-name: scrolling1_2; }
+    #wrap .swiper-wrapper .swiper-slide-active[data-custom-index="2"] .inner .pic img {
+      animation-name: scrolling2_2; }
+  #wrap .swiper-pagination {
+    right: 5vw; }
+  #wrap .swiper-button-prev {
+    right: calc(5vw + 30px); }
+  #wrap .swiper-button-next {
+    right: 5vw; } }
+@media screen and (max-width: 1400px) {
+  #wrap .swiper-wrapper .swiper-slide-active[data-custom-index="1"] .inner .pic img {
+    animation-name: scrolling1_3; }
+  #wrap .swiper-wrapper .swiper-slide-active[data-custom-index="2"] .inner .pic img {
+    animation-name: scrolling2_3; } }
+@media screen and (max-width: 1200px) {
+  #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h1, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h1 {
+    font-size: 50px; }
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h1::after, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h1::after {
+      margin-top: 5px; }
+  #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con > p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con > p {
+    margin-bottom: 30px; }
+  #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con video, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con video {
+    width: 90%; }
+  #wrap .swiper-wrapper .swiper-slide-active[data-custom-index="1"] .inner .pic img {
+    animation-name: scrolling1_4; }
+  #wrap .swiper-wrapper .swiper-slide-active[data-custom-index="2"] .inner .pic img {
+    animation-name: scrolling2_4; } }
 @keyframes scrolling1 {
   0% {
     top: 0%; }
   20% {
     top: 0%; }
   50% {
-    top: -190%; }
+    top: -210%; }
   70% {
-    top: -190%; }
+    top: -210%; }
+  100% {
+    top: 0%; } }
+@keyframes scrolling1_2 {
+  0% {
+    top: 0%; }
+  20% {
+    top: 0%; }
+  50% {
+    top: -195%; }
+  70% {
+    top: -195%; }
+  100% {
+    top: 0%; } }
+@keyframes scrolling1_3 {
+  0% {
+    top: 0%; }
+  20% {
+    top: 0%; }
+  50% {
+    top: -160%; }
+  70% {
+    top: -160%; }
+  100% {
+    top: 0%; } }
+@keyframes scrolling1_4 {
+  0% {
+    top: 0%; }
+  20% {
+    top: 0%; }
+  50% {
+    top: -125%; }
+  70% {
+    top: -125%; }
   100% {
     top: 0%; } }
 @keyframes scrolling2 {
@@ -395,9 +457,42 @@ input:focus, textarea:focus {
   20% {
     top: 0%; }
   50% {
-    top: -200%; }
+    top: -225%; }
   70% {
-    top: -200%; }
+    top: -225%; }
+  100% {
+    top: 0%; } }
+@keyframes scrolling2_2 {
+  0% {
+    top: 0%; }
+  20% {
+    top: 0%; }
+  50% {
+    top: -210%; }
+  70% {
+    top: -210%; }
+  100% {
+    top: 0%; } }
+@keyframes scrolling2_3 {
+  0% {
+    top: 0%; }
+  20% {
+    top: 0%; }
+  50% {
+    top: -170%; }
+  70% {
+    top: -170%; }
+  100% {
+    top: 0%; } }
+@keyframes scrolling2_4 {
+  0% {
+    top: 0%; }
+  20% {
+    top: 0%; }
+  50% {
+    top: -132%; }
+  70% {
+    top: -132%; }
   100% {
     top: 0%; } }
 

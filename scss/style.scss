@@ -38,9 +38,9 @@ $font : 'Maven Pro';
         height: 100%;
 
         .swiper-slide{
-            width: 60vw;
-            height: 65vh;
-            top: 18vh;
+            width: 70vw;
+            height: 70vh;
+            top: 15vh;
 
             .inner{
                 width: 100%;
@@ -58,18 +58,18 @@ $font : 'Maven Pro';
                     opacity: 1;
                     transform: scale(1.1);
                 }
-                &[data-swiper-slide-index="1"]{
+                &[data-custom-index="1"]{
                     .inner .pic img{
                         animation: scrolling1 8s ease-in-out infinite;
                     }
                 }
-                &[data-swiper-slide-index="2"]{
+                &[data-custom-index="2"]{
                     .inner .pic img{
                         animation: scrolling2 8s ease-in-out infinite;
                     }
                 }
             }
-            &[data-swiper-slide-index="0"]{
+            &[data-custom-index="0"]{
                 .inner{
                     padding: 20px 0;
                     background: #ddd;
@@ -115,7 +115,7 @@ $font : 'Maven Pro';
                     }
                 }
             }
-            &[data-swiper-slide-index="1"], &[data-swiper-slide-index="2"]{
+            &[data-custom-index="1"], &[data-custom-index="2"]{
                 .inner{
                     display: flex;
 
@@ -168,7 +168,7 @@ $font : 'Maven Pro';
                         >p{
                             font: 500 11px/1.4 $font;
                             color: #555;
-                            margin-bottom: 30px;
+                            margin-bottom: 50px;
                         }
                         h3{
                             font: 300 12px/1 $font;
@@ -224,7 +224,7 @@ $font : 'Maven Pro';
                         }
                         video{
                             width: 80%;
-                            height: 200px;
+                            height: 250px;
                             object-fit: cover;
                             margin: 0 auto;
                             display: block;
@@ -233,9 +233,8 @@ $font : 'Maven Pro';
                     }
                 }
             }
-            &[data-swiper-slide-index="2"]{
+            &[data-custom-index="2"]{
                 .inner .con{
-                    >p{margin-bottom: 50px;}
                     h3{margin-bottom: 10px;}
                     ul{
                         margin-bottom: 30px;
@@ -246,7 +245,7 @@ $font : 'Maven Pro';
                     }
                 }
             }
-            &[data-swiper-slide-index="3"]{
+            &[data-custom-index="3"]{
                 .inner{
                     .pic{
                         width: 100%;
@@ -358,7 +357,7 @@ $font : 'Maven Pro';
                     }
                 }
             }
-            &[data-swiper-slide-index="4"]{
+            &[data-custom-index="4"]{
                 .inner{
                     background: #888;
 
@@ -484,19 +483,148 @@ $font : 'Maven Pro';
     }
 }
 
+@media screen and (max-width: 1600px){
+    #wrap{
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 80vw;
+
+                &-active{
+                    &[data-custom-index="1"] .inner .pic img{
+                        animation-name: scrolling1_2;
+                    }
+                    &[data-custom-index="2"] .inner .pic img{
+                        animation-name: scrolling2_2;
+                    }
+                }
+            }
+        }
+        .swiper-pagination{
+            right: 5vw;
+        }
+        .swiper-button-prev{
+            right: calc(5vw + 30px);
+        }
+        .swiper-button-next{
+            right: 5vw;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px){
+    #wrap{
+        .swiper-wrapper{
+            .swiper-slide-active{
+                &[data-custom-index="1"] .inner .pic img{
+                    animation-name: scrolling1_3;
+                }
+                &[data-custom-index="2"] .inner .pic img{
+                    animation-name: scrolling2_3;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #wrap{
+        .swiper-wrapper{
+            .swiper-slide{
+                &[data-custom-index="1"], &[data-custom-index="2"]{
+                    .inner .con{
+                        h1{
+                            font-size: 50px;
+
+                            &::after{
+                                margin-top: 5px;
+                            }
+                        }
+                        >p{
+                            margin-bottom: 30px;
+                        }
+                        video{
+                            width: 90%;
+                        }
+                    }
+                }
+                &-active{
+                    &[data-custom-index="1"]{
+                        .inner .pic img{
+                            animation-name: scrolling1_4;
+                        }
+                    }
+                    &[data-custom-index="2"]{
+                        .inner .pic img{
+                            animation-name: scrolling2_4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @keyframes scrolling1{
     0%{top: 0%}
     20%{top: 0%}
-    50%{top: -190%}
-    70%{top: -190%}
+    50%{top: -210%}
+    70%{top: -210%}
+    100%{top: 0%}
+}
+
+@keyframes scrolling1_2{
+    0%{top: 0%}
+    20%{top: 0%}
+    50%{top: -195%}
+    70%{top: -195%}
+    100%{top: 0%}
+}
+
+@keyframes scrolling1_3{
+    0%{top: 0%}
+    20%{top: 0%}
+    50%{top: -160%}
+    70%{top: -160%}
+    100%{top: 0%}
+}
+
+@keyframes scrolling1_4{
+    0%{top: 0%}
+    20%{top: 0%}
+    50%{top: -125%}
+    70%{top: -125%}
     100%{top: 0%}
 }
 
 @keyframes scrolling2{
     0%{top: 0%}
     20%{top: 0%}
-    50%{top: -200%}
-    70%{top: -200%}
+    50%{top: -225%}
+    70%{top: -225%}
+    100%{top: 0%}
+}
+
+@keyframes scrolling2_2{
+    0%{top: 0%}
+    20%{top: 0%}
+    50%{top: -210%}
+    70%{top: -210%}
+    100%{top: 0%}
+}
+
+@keyframes scrolling2_3{
+    0%{top: 0%}
+    20%{top: 0%}
+    50%{top: -170%}
+    70%{top: -170%}
+    100%{top: 0%}
+}
+
+@keyframes scrolling2_4{
+    0%{top: 0%}
+    20%{top: 0%}
+    50%{top: -132%}
+    70%{top: -132%}
     100%{top: 0%}
 }

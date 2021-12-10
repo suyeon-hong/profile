@@ -4,7 +4,7 @@ new Swiper("#wrap", {
     loop: true,
     slidesPerView: "auto",
     centeredSlides: true,
-    spaceBetween: 150,
+    spaceBetween: 100,
     mousewheel: true,
 
     navigation:{
@@ -41,7 +41,7 @@ for(el of navi){
 
 function activation(){
     let item = document.querySelector(".swiper-slide-active");
-    let i = item.getAttribute("data-swiper-slide-index");
+    let i = item.getAttribute("data-custom-index");
 
     for(el of bgs){
         el.classList.remove("on");

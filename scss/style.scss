@@ -168,7 +168,7 @@ $font : 'Maven Pro';
                         >p{
                             font: 500 11px/1.4 $font;
                             color: #555;
-                            margin-bottom: 50px;
+                            margin-bottom: 40px;
                         }
                         h3{
                             font: 300 12px/1 $font;
@@ -238,10 +238,6 @@ $font : 'Maven Pro';
                     h3{margin-bottom: 10px;}
                     ul{
                         margin-bottom: 30px;
-
-                        li a .txt h4{
-                            line-height: 30px;
-                        }
                     }
                 }
             }
@@ -299,9 +295,9 @@ $font : 'Maven Pro';
                                     width: 156%;
                                     height: 1px;
                                     background: #000;
-                                    margin-top: 5px;
                                     position: relative;
                                     left: -100px;
+                                    bottom: -5px;
                                 }
                             }
                             ul{
@@ -320,7 +316,7 @@ $font : 'Maven Pro';
                                             border: 1px solid #888;
                                             font-size: 14px;
                                             line-height: 22px;
-                                            color: #333;
+                                            color: #555;
                                             text-align: center;
                                             margin-right: 5px;
                                         }
@@ -470,6 +466,7 @@ $font : 'Maven Pro';
             width: auto;
             height: auto;
             background: transparent;
+            font: 300 16px/1 "Maven Pro";
             margin-left: 50px;
             opacity: .7;
 
@@ -548,7 +545,7 @@ $font : 'Maven Pro';
                             margin-bottom: 30px;
                         }
                         video{
-                            width: 90%;
+                            width: 100%;
                         }
                     }
                 }
@@ -596,12 +593,15 @@ $font : 'Maven Pro';
                         }
                         .con{
                             width: 100%;
+
+                            video{
+                                width: 90%;
+                            }
                         }
                     }
                 }
                 &[data-custom-index="3"]{
                     .inner{
-                        // .pic{margin-bottom: 15px;}
                         .con{
                             padding: 0 30px;
 
@@ -624,6 +624,105 @@ $font : 'Maven Pro';
         }
     }
     
+}
+
+@media screen and (max-width: 768px) {
+    #wrap{
+        .swiper-wrapper{
+            .swiper-slide{
+                &[data-custom-index="0"]{
+                    .inner{
+                        .box{
+                            padding: 70px 50px 70px 30px;
+                        }
+                        h1{
+                            font-size: 36px;
+
+                            &::after{
+                                text-align: left;
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+                &[data-custom-index="1"], &[data-custom-index="2"]{
+                    .inner .con video{width: 100%;}
+                }
+                &[data-custom-index="3"]{
+                    .inner{
+                        .pic{
+                            height: 60%;
+                        }
+                        .con{
+                            flex-direction: column;
+
+                            .left{
+                                width: 50%;
+                                margin-bottom: 20px;
+
+                                h1{
+                                    font-size: 32px;
+
+                                    &::after{
+                                        width: calc(100% + 30px);
+                                        left: -30px;
+                                    }
+                                }
+                            }
+                            .right{
+                                width: 100%;
+                                
+                                h2{
+                                    color: #333;
+                                    font-size: 12px;
+
+                                    &::after{
+                                        content: '';
+                                        display: block;
+                                        width: calc(100% + 30px);
+                                        height: 1px;
+                                        background: #555;
+                                        position: relative;
+                                        left: -30px;
+                                        bottom: -5px;
+                                    }
+                                }
+                                p{
+                                    color: #333;
+                                }
+                            }
+                        }
+                    }
+                }
+                &[data-custom-index="4"]{
+                    .inner{
+                        .contact{
+                            h1{
+                                font-size: 26px;
+                            }
+                            h2{
+                                font-size: 20px;
+                                margin-bottom: 100px;
+                            }
+                            label{font-size: 14px;}
+                            input[type=submit]{
+                                width: 100px;
+                                height: 30px;
+                                font-size: 12px;
+                                line-height: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination{
+            span{
+                font-size: 14px;
+                margin-left: 20px;
+            }
+        }
+    }
 }
 
 @keyframes scrolling1{

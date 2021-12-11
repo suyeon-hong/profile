@@ -197,6 +197,13 @@ $font : 'Maven Pro';
                                     display: flex;
                                     margin-bottom: 10px;
 
+                                    &:hover{
+                                        i{
+                                            color: #111;
+                                            border-color: #111;
+                                        }
+                                        .txt h4{font-weight: 600;}
+                                    }
                                     i{
                                         width: 30px;
                                         height: 30px;
@@ -207,12 +214,14 @@ $font : 'Maven Pro';
                                         text-align: center;
                                         color: #555;
                                         margin-right: 10px;
+                                        transition: .4s;
                                     }
                                     .txt{
                                         h4{
                                             font: 400 11px/1 $font;
                                             color: #222;
                                             margin-bottom: 2px;
+                                            transition: .4s;
                                         }
                                         p{
                                             font: 300 11px/1 $font;
@@ -309,6 +318,13 @@ $font : 'Maven Pro';
                                     a{
                                         display: flex;
         
+                                        &:hover{
+                                            i{
+                                                color: #111;
+                                                border-color: #111;
+                                            }
+                                            .txt h4{font-weight: 600;}
+                                        }
                                         i{
                                             width: 24px;
                                             height: 24px;

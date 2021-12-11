@@ -167,6 +167,11 @@ input:focus, textarea:focus {
               #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a {
                 display: flex;
                 margin-bottom: 10px; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a:hover i, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a:hover i {
+                  color: #111;
+                  border-color: #111; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a:hover .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a:hover .txt h4 {
+                  font-weight: 600; }
                 #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a i, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a i {
                   width: 30px;
                   height: 30px;
@@ -176,11 +181,13 @@ input:focus, textarea:focus {
                   line-height: 28px;
                   text-align: center;
                   color: #555;
-                  margin-right: 10px; }
+                  margin-right: 10px;
+                  transition: .4s; }
                 #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a .txt h4 {
                   font: 400 11px/1 "Maven Pro";
                   color: #222;
-                  margin-bottom: 2px; }
+                  margin-bottom: 2px;
+                  transition: .4s; }
                 #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a .txt p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a .txt p {
                   font: 300 11px/1 "Maven Pro";
                   color: #555; }
@@ -247,6 +254,11 @@ input:focus, textarea:focus {
             justify-content: space-between; }
             #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a {
               display: flex; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a:hover i {
+                color: #111;
+                border-color: #111; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a:hover .txt h4 {
+                font-weight: 600; }
               #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a i {
                 width: 24px;
                 height: 24px;

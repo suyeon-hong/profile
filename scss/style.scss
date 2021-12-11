@@ -120,7 +120,7 @@ $font : 'Maven Pro';
                     display: flex;
 
                     .pic{
-                        width: 50%;
+                        width: 650px;
                         height: 100%;
                         border-right: 1px solid #888;
                         position: relative;
@@ -134,12 +134,12 @@ $font : 'Maven Pro';
                         }
                     }
                     .con{
-                        width: 50%;
+                        width: calc(100% - 650px);
                         height: 100%;
                         padding: 50px 30px 30px;
                         position: relative;
 
-                        span{
+                        >span{
                             position: absolute;
                             top: 10px;
                             right: 10px;
@@ -150,6 +150,7 @@ $font : 'Maven Pro';
                             font: 600 60px/1 $font;
                             color: #111;
                             margin-bottom: 5px;
+                            position: relative;
 
                             &::after{
                                 content: '';
@@ -499,15 +500,6 @@ $font : 'Maven Pro';
         .swiper-wrapper{
             .swiper-slide{
                 width: 80vw;
-
-                &-active{
-                    &[data-custom-index="1"] .inner .pic img{
-                        animation-name: scrolling1_2;
-                    }
-                    &[data-custom-index="2"] .inner .pic img{
-                        animation-name: scrolling2_2;
-                    }
-                }
             }
         }
         .swiper-pagination{
@@ -525,12 +517,20 @@ $font : 'Maven Pro';
 @media screen and (max-width: 1400px){
     #wrap{
         .swiper-wrapper{
-            .swiper-slide-active{
-                &[data-custom-index="1"] .inner .pic img{
-                    animation-name: scrolling1_3;
+            .swiper-slide{
+                &[data-custom-index="1"], &[data-custom-index="2"]{
+                    .inner{
+                        .pic{width: 530px;}
+                        .con{width: calc(100% - 530px);}
+                    }
                 }
-                &[data-custom-index="2"] .inner .pic img{
-                    animation-name: scrolling2_3;
+                &-active{
+                    &[data-custom-index="1"] .inner .pic img{
+                        animation-name: scrolling1_2;
+                    }
+                    &[data-custom-index="2"] .inner .pic img{
+                        animation-name: scrolling2_2;
+                    }
                 }
             }
         }
@@ -549,31 +549,39 @@ $font : 'Maven Pro';
                     }
                 }
                 &[data-custom-index="1"], &[data-custom-index="2"]{
-                    .inner .con{
-                        h1{
-                            font-size: 50px;
+                    .inner{
+                        .pic{width: 430px;}
+                        .con{
+                            width: calc(100% - 430px);
 
-                            &::after{
-                                margin-top: 5px;
+                            h1{
+                                font-size: 50px;
+    
+                                &::after{
+                                    margin-top: 5px;
+                                }
                             }
-                        }
-                        >p{
-                            margin-bottom: 30px;
-                        }
-                        video{
-                            width: 100%;
+                            >p{
+                                margin-bottom: 30px;
+                            }
+                            h3, ul{
+                                margin-left: 20%;
+                            }
+                            video{
+                                width: 100%;
+                            }
                         }
                     }
                 }
                 &-active{
                     &[data-custom-index="1"]{
                         .inner .pic img{
-                            animation-name: scrolling1_4;
+                            animation-name: scrolling1_3;
                         }
                     }
                     &[data-custom-index="2"]{
                         .inner .pic img{
-                            animation-name: scrolling2_4;
+                            animation-name: scrolling2_3;
                         }
                     }
                 }
@@ -851,63 +859,47 @@ $font : 'Maven Pro';
 @keyframes scrolling1{
     0%{top: 0%}
     20%{top: 0%}
-    50%{top: -210%}
-    70%{top: -210%}
+    50%{top: -200%}
+    70%{top: -200%}
     100%{top: 0%}
 }
 
 @keyframes scrolling1_2{
     0%{top: 0%}
     20%{top: 0%}
-    50%{top: -195%}
-    70%{top: -195%}
+    50%{top: -145%}
+    70%{top: -145%}
     100%{top: 0%}
 }
 
 @keyframes scrolling1_3{
     0%{top: 0%}
     20%{top: 0%}
-    50%{top: -160%}
-    70%{top: -160%}
-    100%{top: 0%}
-}
-
-@keyframes scrolling1_4{
-    0%{top: 0%}
-    20%{top: 0%}
-    50%{top: -125%}
-    70%{top: -125%}
+    50%{top: -100%}
+    70%{top: -100%}
     100%{top: 0%}
 }
 
 @keyframes scrolling2{
     0%{top: 0%}
     20%{top: 0%}
-    50%{top: -225%}
-    70%{top: -225%}
+    50%{top: -215%}
+    70%{top: -215%}
     100%{top: 0%}
 }
 
 @keyframes scrolling2_2{
     0%{top: 0%}
     20%{top: 0%}
-    50%{top: -210%}
-    70%{top: -210%}
+    50%{top: -158%}
+    70%{top: -158%}
     100%{top: 0%}
 }
 
 @keyframes scrolling2_3{
     0%{top: 0%}
     20%{top: 0%}
-    50%{top: -170%}
-    70%{top: -170%}
-    100%{top: 0%}
-}
-
-@keyframes scrolling2_4{
-    0%{top: 0%}
-    20%{top: 0%}
-    50%{top: -132%}
-    70%{top: -132%}
+    50%{top: -108%}
+    70%{top: -108%}
     100%{top: 0%}
 }

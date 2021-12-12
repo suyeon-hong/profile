@@ -49,14 +49,17 @@ function activation(){
     bgs[i].classList.add("on");
 }
 
-
 const vids = document.querySelectorAll("video");
 
 for(let el of vids){
     el.addEventListener("mouseenter", ()=>{
         el.play();
+        el.closest(".inner").querySelector("svg").style.animationName = "none";
+        el.closest(".inner").querySelector("svg").style.opacity = 0;
     });
     el.addEventListener("mouseleave", ()=>{
         el.pause();
+        el.closest(".inner").querySelector("svg").style.animationName = "move";
+        el.closest(".inner").querySelector("svg").style.opacity = 1;
     });
 }

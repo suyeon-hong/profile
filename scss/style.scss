@@ -53,6 +53,13 @@ $font : 'Maven Pro';
                 position: relative;
                 overflow: hidden;
             }
+            &.swiper-slide-active{
+                &[data-custom-index="1"], &[data-custom-index="2"]{
+                    .inner svg{
+                        animation: move 3s ease-in-out infinite;
+                    }
+                }
+            }
             &-active{
                 .inner{
                     opacity: 1;
@@ -239,6 +246,21 @@ $font : 'Maven Pro';
                             margin: 0 auto;
                             display: block;
                             border: 1px solid #888;
+                        }
+                    }
+                    svg{
+                        width: 60px;
+                        position: absolute;
+                        bottom: 100px;
+                        right: 10px;
+                        transition: .8s;
+
+                        path{
+                            transform: scale(0.1);
+                            fill: #fff;
+                            stroke: #333;
+                            stroke-width: 20px;
+                            stroke-dasharray: 3090px;
                         }
                     }
                 }
@@ -902,4 +924,10 @@ $font : 'Maven Pro';
     50%{top: -108%}
     70%{top: -108%}
     100%{top: 0%}
+}
+
+@keyframes move{
+    0%{right: 10px}
+    50%{right: 100px}
+    100%{right: 10px}
 }

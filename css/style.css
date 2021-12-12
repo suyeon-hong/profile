@@ -204,8 +204,8 @@ input:focus, textarea:focus {
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner svg, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner svg {
           width: 60px;
           position: absolute;
-          bottom: 100px;
-          right: 10px;
+          bottom: 50px;
+          right: 0px;
           transition: .8s; }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner svg path, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner svg path {
             transform: scale(0.1);
@@ -536,10 +536,12 @@ input:focus, textarea:focus {
         font-size: 10px;
         line-height: 1.2; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con > p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con > p {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        font-size: 10px; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h3, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h3 {
         margin-left: 10%;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        font-size: 10px; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul {
         margin-left: 10%;
         margin-bottom: 10px; }
@@ -548,8 +550,9 @@ input:focus, textarea:focus {
           width: 22px;
           height: 22px;
           line-height: 22px; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a .txt h4 {
-          margin-bottom: 0; }
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con ul li a .txt p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul li a .txt p {
+          margin-bottom: 0;
+          font-size: 10px; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con video, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con video {
         height: 150px; }
     #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic {
@@ -558,11 +561,17 @@ input:focus, textarea:focus {
     #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left {
       width: 70%;
       margin-bottom: 10px; }
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left h1 {
+        font-size: 28px; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a i {
         font-size: 12px;
         width: 22px;
         height: 22px;
         line-height: 22px; }
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt p {
+        font-size: 10px; }
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right h2, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right p {
+      font-size: 10px; }
     #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .contact {
       height: 90%;
       top: 5%; }
@@ -657,10 +666,10 @@ input:focus, textarea:focus {
     top: 0%; } }
 @keyframes moveRight {
   0% {
-    right: 10px; }
+    right: 0px; }
   50% {
     right: 100px; }
   100% {
-    right: 10px; } }
+    right: 0px; } }
 
 /*# sourceMappingURL=style.css.map */

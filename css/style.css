@@ -81,7 +81,7 @@ input:focus, textarea:focus {
           padding: 70px 300px 70px 30px; }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box p {
             font: 500 12px/1.4 "Maven Pro";
-            color: #000; }
+            color: #111; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1 {
           width: 200px;
           font: 600 70px/1 "Maven Pro";
@@ -533,9 +533,9 @@ input:focus, textarea:focus {
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con span, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con span {
         font-size: 10px; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h1, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h1 {
-        font-size: 40px; }
+        font-size: 34px; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con h2, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con h2 {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-size: 10px;
         line-height: 1.2; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con > p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con > p {

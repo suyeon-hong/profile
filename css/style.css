@@ -521,7 +521,10 @@ input:focus, textarea:focus {
     height: 75vh;
     top: 12vh; }
     #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box {
-      padding-right: 30px; }
+      padding: 30px; }
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box p {
+        font-size: 10px;
+        line-height: 1.6; }
     #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1 {
       left: 60%;
       top: 20%; }

@@ -779,7 +779,14 @@ $font : 'Maven Pro';
 
                 &[data-custom-index="0"]{
                     .inner{
-                        .box{padding-right: 30px;}
+                        .box{
+                            padding: 30px;
+
+                            p{
+                                font-size: 10px;
+                                line-height: 1.6;
+                            }
+                        }
                         h1{
                             left: 60%;
                             top: 20%;

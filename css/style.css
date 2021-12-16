@@ -331,7 +331,7 @@ input:focus, textarea:focus {
             color: #555;
             text-align: left;
             margin-bottom: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .contact input[type=email] {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .contact input[type=text] {
             width: 80%;
             margin: 0 auto;
             height: 30px;

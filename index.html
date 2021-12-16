@@ -169,11 +169,14 @@
                     <div class="contact">
                         <h1>Fill the form to contact me.</h1>
                         <h2>Thank you!</h2>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        <input type="submit" value="SEND">
+                        <form id="contact_form">
+                            <input type="hidden" required name="contact_number">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" required name="from_name">
+                            <label for="message">Message</label>
+                            <textarea id="message" required name="message_html"></textarea>
+                            <input type="submit" value="SEND">
+                        </form>
                     </div>
                 </div>
             </div>

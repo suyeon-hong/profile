@@ -122,7 +122,10 @@ input:focus, textarea:focus {
           width: calc(100% - 650px);
           height: 100%;
           padding: 50px 30px 30px;
-          position: relative; }
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con > span, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con > span {
             position: absolute;
             top: 10px;
@@ -216,89 +219,93 @@ input:focus, textarea:focus {
         margin-bottom: 10px; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con ul {
         margin-bottom: 30px; }
-      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic {
-        width: 100%;
-        height: 78%;
-        background: #000;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 30px; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic:hover img {
-          opacity: 0; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic img {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          object-fit: cover;
-          transition: 1s; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic video {
-          width: 100%;
-          height: 100%;
-          object-fit: contain; }
-      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner span {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font: 300 11px/1 "Maven Pro";
-        color: #fff; }
-      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con {
-        width: 100%;
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner {
         display: flex;
-        justify-content: space-between;
-        padding: 0 50px; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left {
-          width: 25%; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left h1 {
-            font: 600 30px/1 "Maven Pro";
-            color: #111;
-            margin-bottom: 15px; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left h1::after {
-              content: '';
-              display: block;
-              width: 156%;
-              height: 1px;
-              background: #000;
-              position: relative;
-              left: -100px;
-              bottom: -5px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul {
+        flex-direction: column;
+        justify-content: space-between; }
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic {
+          width: 100%;
+          height: 78%;
+          background: #000;
+          position: relative;
+          overflow: hidden; }
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic:hover img {
+            opacity: 0; }
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic img {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            display: flex;
-            justify-content: space-between; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a {
-              display: flex; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a:hover i {
-                color: #111;
-                border-color: #111; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a:hover .txt h4 {
-                font-weight: 600; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a i {
-                width: 24px;
-                height: 24px;
-                border-radius: 50%;
-                border: 1px solid #888;
-                font-size: 14px;
-                line-height: 22px;
-                color: #555;
-                text-align: center;
-                margin-right: 5px; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt h4 {
-                font: 300 11px/1 "Maven Pro";
-                color: #333; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt p {
-                font: 300 11px/1 "Maven Pro";
-                color: #555; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right {
-          width: 60%;
-          padding-top: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right h2 {
-            font: 600 14px/1 "Maven Pro";
-            color: #333;
-            margin-bottom: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right p {
-            font: 300 12px/1.4 "Maven Pro";
-            color: #555; }
+            object-fit: cover;
+            transition: 1s; }
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; }
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner span {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font: 300 11px/1 "Maven Pro";
+          color: #fff; }
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 50px;
+          margin-bottom: 40px; }
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left {
+            width: 25%; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left h1 {
+              font: 600 30px/1 "Maven Pro";
+              color: #111;
+              margin-bottom: 15px; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left h1::after {
+                content: '';
+                display: block;
+                width: 156%;
+                height: 1px;
+                background: #000;
+                position: relative;
+                left: -100px;
+                bottom: -5px; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul {
+              width: 100%;
+              display: flex;
+              justify-content: space-between; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a {
+                display: flex; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a:hover i {
+                  color: #111;
+                  border-color: #111; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a:hover .txt h4 {
+                  font-weight: 600; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a i {
+                  width: 24px;
+                  height: 24px;
+                  border-radius: 50%;
+                  border: 1px solid #888;
+                  font-size: 14px;
+                  line-height: 22px;
+                  color: #555;
+                  text-align: center;
+                  margin-right: 5px; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt h4 {
+                  font: 300 11px/1 "Maven Pro";
+                  color: #333; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt p {
+                  font: 300 11px/1 "Maven Pro";
+                  color: #555; }
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right {
+            width: 60%;
+            padding-top: 10px; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right h2 {
+              font: 600 14px/1 "Maven Pro";
+              color: #333;
+              margin-bottom: 10px; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right p {
+              font: 300 12px/1.4 "Maven Pro";
+              color: #555; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner {
         background: #888; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .bg {

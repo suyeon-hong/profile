@@ -145,6 +145,9 @@ $font : 'Maven Pro';
                         height: 100%;
                         padding: 50px 30px 30px;
                         position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
 
                         >span{
                             position: absolute;
@@ -274,13 +277,16 @@ $font : 'Maven Pro';
             }
             &[data-custom-index="3"]{
                 .inner{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
                     .pic{
                         width: 100%;
                         height: 78%;
                         background: #000;
                         position: relative;
                         overflow: hidden;
-                        margin-bottom: 30px;
 
                         &:hover{
                             img{opacity: 0;}
@@ -311,6 +317,7 @@ $font : 'Maven Pro';
                         display: flex;
                         justify-content: space-between;
                         padding: 0 50px;
+                        margin-bottom: 40px;
 
                         .left{
                             width: 25%;

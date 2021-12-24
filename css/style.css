@@ -196,7 +196,8 @@ input:focus, textarea:focus {
                   transition: .4s; }
                 #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div ul li a .txt p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div ul li a .txt p {
                   font: 300 11px/1 "Maven Pro";
-                  color: #555; }
+                  color: #555;
+                  margin-bottom: 0; }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con video, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con video {
             width: 80%;
             height: 250px;

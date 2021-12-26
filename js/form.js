@@ -13,12 +13,12 @@ window.onload = function() {
         emailjs
             .sendForm('service_aty9anc', 'template_b4q9nqd', this)
             .then(
-                function(response) {
+                response=> {
                     console.log('메일 발송 성공', response.status, response.text); 
                     alert("문의 내용이 전송되었습니다.");   
                     form.reset();   
                 }, 
-                function(error) {
+                error=> {
                     console.log('메일 발송 실패', error);
                     alert("메일 발송에 실패했습니다.");
                 }

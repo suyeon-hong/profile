@@ -278,7 +278,7 @@ $font : 'Maven Pro';
                     }
                 }
             }
-            &[data-custom-index="3"]{
+            &[data-custom-index="3"], &[data-custom-index="4"]{
                 .inner{
                     .pic{
                         width: 100%;
@@ -384,8 +384,17 @@ $font : 'Maven Pro';
 
                             h2{
                                 font: 600 14px/1 $font;
-                                color: #333;
+                                color: #555;
                                 margin-bottom: 10px;
+
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width: 110%;
+                                    height: 1px;
+                                    background: #555;
+                                    margin-top: 10px;
+                                }
                             }
                             p{
                                 font: 300 12px/1.4 $font;
@@ -395,7 +404,7 @@ $font : 'Maven Pro';
                     }
                 }
             }
-            &[data-custom-index="4"]{
+            &[data-custom-index="5"]{
                 .inner{
                     background: #888;
 
@@ -655,7 +664,7 @@ $font : 'Maven Pro';
                         }
                     }
                 }
-                &[data-custom-index="3"]{
+                &[data-custom-index="3"], &[data-custom-index="4"]{
                     .inner{
                         .con{
                             padding: 0 30px;
@@ -703,7 +712,7 @@ $font : 'Maven Pro';
                 &[data-custom-index="1"], &[data-custom-index="2"]{
                     .inner .con video{width: 100%;}
                 }
-                &[data-custom-index="3"]{
+                &[data-custom-index="3"], &[data-custom-index="4"]{
                     .inner{
                         .pic{
                             height: 60%;
@@ -749,7 +758,7 @@ $font : 'Maven Pro';
                         }
                     }
                 }
-                &[data-custom-index="4"]{
+                &[data-custom-index="5"]{
                     .inner{
                         .contact{
                             h1{
@@ -838,7 +847,7 @@ $font : 'Maven Pro';
                         }
                     }
                 }
-                &[data-custom-index="3"]{
+                &[data-custom-index="3"], &[data-custom-index="4"]{
                     .inner{
                         .pic{
                             height: 50%;
@@ -868,7 +877,7 @@ $font : 'Maven Pro';
                         }
                     }
                 }
-                &[data-custom-index="4"]{
+                &[data-custom-index="5"]{
                     .inner{
                         .contact{
                             height: 90%;
@@ -893,10 +902,11 @@ $font : 'Maven Pro';
         }
         .swiper-pagination{
             top: 2vh;
+            right: 2vw;
 
             span{
                 font-size: 13px;
-                margin-left: 10px;
+                margin-left: 5px;
             }
         }
         .swiper-button-prev, .swiper-button-next{

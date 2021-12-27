@@ -226,7 +226,7 @@ input:focus, textarea:focus {
         background: #000;
         position: relative;
         overflow: hidden;
-        margin-bottom: 5vh; }
+        margin-bottom: 3vh; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic:hover img, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .pic:hover img {
           opacity: 0; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .pic img, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .pic img {
@@ -250,7 +250,8 @@ input:focus, textarea:focus {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 0 50px; }
+        padding: 0 50px;
+        margin-bottom: 20px; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .left {
           width: 25%; }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left h1, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .left h1 {
@@ -306,7 +307,7 @@ input:focus, textarea:focus {
               width: 110%;
               height: 1px;
               background: #555;
-              margin-top: 10px; }
+              margin-top: 5px; }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .right p {
             font: 300 12px/1.4 "Maven Pro";
             color: #555; }
@@ -504,14 +505,9 @@ input:focus, textarea:focus {
         color: #333;
         font-size: 12px; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right h2::after, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .right h2::after {
-          content: '';
-          display: block;
           width: calc(100% + 30px);
-          height: 1px;
-          background: #555;
           position: relative;
-          left: -30px;
-          bottom: -5px; }
+          left: -30px; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .right p {
         color: #333; }
   #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact h1 {

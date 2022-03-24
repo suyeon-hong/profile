@@ -25,14 +25,13 @@ input:focus, textarea:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #bbb;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0;
     transition: 1s; }
     #wrap .bg li.on {
-      opacity: .7; }
+      opacity: 0.7; }
     #wrap .bg li:nth-of-type(1) {
       background-image: url(../img/bg1.jpg); }
     #wrap .bg li:nth-of-type(2) {
@@ -43,6 +42,8 @@ input:focus, textarea:focus {
       background-image: url(../img/bg4.jpg); }
     #wrap .bg li:nth-of-type(5) {
       background-image: url(../img/bg5.jpg); }
+    #wrap .bg li:nth-of-type(6) {
+      background-image: url(../img/bg6.jpg); }
   #wrap .swiper-wrapper {
     width: 100%;
     height: 100%; }
@@ -56,7 +57,7 @@ input:focus, textarea:focus {
         background: #fff;
         color: rgba(255, 255, 255, 0.5);
         transform: scale(0.9);
-        transition: .6s;
+        transition: 0.6s;
         opacity: 0.4;
         position: relative;
         overflow: hidden; }
@@ -71,27 +72,40 @@ input:focus, textarea:focus {
         animation: scrolling2 8s ease-in-out infinite; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner {
         padding: 20px 0;
-        background: #ddd; }
+        background: #efefef; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box {
-          width: 70%;
+          width: 75%;
           height: 100%;
-          background: #888;
           display: flex;
           align-items: flex-end;
-          padding: 70px 300px 70px 30px; }
+          padding: 70px 300px 70px 30px;
+          position: relative; }
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url(../img/main.jpg) no-repeat center/cover;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            left: 0; }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box p {
-            font: 500 12px/1.4 "Maven Pro";
-            color: #111; }
+            font: 500 15px/1.6 "Maven Pro";
+            color: #111;
+            position: relative; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box p b {
+              color: #051367; }
         #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1 {
           width: 200px;
           font: 600 70px/1 "Maven Pro";
           color: #111;
           position: absolute;
           top: 50%;
-          left: 65%;
+          left: 70%;
           transform: translateY(-50%); }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1::before {
-            content: '';
+            content: "";
             display: block;
             width: 1px;
             height: 255px;
@@ -100,7 +114,7 @@ input:focus, textarea:focus {
             left: 20px;
             top: -255px; }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1::after {
-            content: 'Suyeon Hong';
+            content: "Suyeon Hong";
             display: block;
             font: 600 13px/1 "Maven Pro";
             color: #555;
@@ -138,7 +152,7 @@ input:focus, textarea:focus {
             margin-bottom: 5px;
             position: relative; }
             #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div h1::after, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div h1::after {
-              content: '';
+              content: "";
               display: block;
               width: 110%;
               height: 1px;
@@ -158,7 +172,7 @@ input:focus, textarea:focus {
             margin-left: 30%;
             margin-bottom: 15px; }
             #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div h3::after, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div h3::after {
-              content: '';
+              content: "";
               display: block;
               width: 110%;
               height: 1px;
@@ -188,12 +202,12 @@ input:focus, textarea:focus {
                   text-align: center;
                   color: #555;
                   margin-right: 10px;
-                  transition: .4s; }
+                  transition: 0.4s; }
                 #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div ul li a .txt h4 {
                   font: 400 11px/1 "Maven Pro";
                   color: #222;
                   margin-bottom: 2px;
-                  transition: .4s; }
+                  transition: 0.4s; }
                 #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div ul li a .txt p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div ul li a .txt p {
                   font: 300 11px/1 "Maven Pro";
                   color: #555;
@@ -210,7 +224,7 @@ input:focus, textarea:focus {
           position: absolute;
           bottom: 50px;
           right: 0px;
-          transition: .8s; }
+          transition: 0.8s; }
           #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner svg path, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner svg path {
             transform: scale(0.1);
             fill: #fff;
@@ -259,7 +273,7 @@ input:focus, textarea:focus {
             color: #111;
             margin-bottom: 15px; }
             #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left h1::after, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .left h1::after {
-              content: '';
+              content: "";
               display: block;
               width: 156%;
               height: 1px;
@@ -302,7 +316,7 @@ input:focus, textarea:focus {
             color: #555;
             margin-bottom: 10px; }
             #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right h2::after, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .right h2::after {
-              content: '';
+              content: "";
               display: block;
               width: 110%;
               height: 1px;
@@ -345,7 +359,8 @@ input:focus, textarea:focus {
             color: #555;
             text-align: left;
             margin-bottom: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type=text] {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type="text"],
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type="email"] {
             width: 80%;
             margin: 0 auto;
             height: 30px;
@@ -367,7 +382,7 @@ input:focus, textarea:focus {
             font: 600 14px/1 "Maven Pro";
             color: #333;
             padding: 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type=submit] {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type="submit"] {
             display: inline-block;
             width: 130px;
             height: 34px;
@@ -378,37 +393,47 @@ input:focus, textarea:focus {
             border-radius: 30px;
             border: 1px solid #888;
             cursor: pointer;
-            transition: .6s; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type=submit]:hover {
+            transition: 0.6s; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type="submit"]:hover {
               color: #fff;
               background: #888; }
-  #wrap .swiper-button-prev {
+  #wrap .swiper-button-prev, #wrap .swiper-button-next {
     top: auto;
+    bottom: 4vh;
+    color: #000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  #wrap .swiper-button-prev {
     left: auto;
     right: calc(11vw + 30px);
-    bottom: 4vh;
-    transform: scale(0.7);
-    color: #000; }
+    transform: scale(0.7); }
   #wrap .swiper-button-next {
-    top: auto;
     right: 11vw;
-    bottom: 4vh;
-    transform: scale(0.7);
-    color: #000; }
+    transform: scale(0.7); }
   #wrap .swiper-pagination {
     position: absolute;
     top: 5vh;
     left: auto;
     right: 11vw;
     width: auto;
-    height: 50px; }
+    height: 50px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     #wrap .swiper-pagination span {
       width: auto;
       height: auto;
       background: transparent;
       font: 300 16px/1 "Maven Pro";
       margin-left: 50px;
-      opacity: .7; }
+      opacity: 0.7; }
       #wrap .swiper-pagination span.swiper-pagination-bullet-active {
         opacity: 1;
         font-weight: bold; }
@@ -444,7 +469,9 @@ input:focus, textarea:focus {
         margin-top: 5px; }
     #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div > p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div > p {
       margin-bottom: 30px; }
-    #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div h3, #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div ul, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div h3, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div ul {
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div h3,
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div ul, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div h3,
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div ul {
       margin-left: 20%; }
     #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con video, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con video {
       width: 100%; }
@@ -480,6 +507,9 @@ input:focus, textarea:focus {
 @media screen and (max-width: 768px) {
   #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box {
     padding-right: 50px; }
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .box p {
+      font-size: 13px;
+      line-height: 1.4; }
   #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1 {
     font-size: 36px; }
     #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner h1::after {
@@ -516,7 +546,7 @@ input:focus, textarea:focus {
     font-size: 20px; }
   #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact label {
     font-size: 14px; }
-  #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type=submit] {
+  #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type="submit"] {
     width: 100px;
     height: 30px;
     font-size: 12px;
@@ -561,7 +591,9 @@ input:focus, textarea:focus {
           width: 22px;
           height: 22px;
           line-height: 22px; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div ul li a .txt p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div ul li a .txt p {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div ul li a .txt h4,
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con div ul li a .txt p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div ul li a .txt h4,
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con div ul li a .txt p {
           margin-bottom: 0;
           font-size: 10px; }
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .con video, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .con video {
@@ -578,9 +610,13 @@ input:focus, textarea:focus {
         width: 22px;
         height: 22px;
         line-height: 22px; }
-      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .left ul li a .txt h4, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .left ul li a .txt p {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt h4,
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .left ul li a .txt p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .left ul li a .txt h4,
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .left ul li a .txt p {
         font-size: 10px; }
-    #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right h2, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .right h2, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .right p {
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right h2,
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .con .right p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .right h2,
+    #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .inner .con .right p {
       font-size: 10px; }
     #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact {
       height: 90%;
@@ -593,10 +629,11 @@ input:focus, textarea:focus {
       #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact label {
         font-size: 12px;
         margin-bottom: 0; }
-      #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type=text], #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact textarea {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type="text"],
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact textarea {
         font-size: 12px;
         padding: 5px; }
-      #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type=submit] {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="5"] .inner .contact input[type="submit"] {
         width: 80px;
         height: 25px;
         line-height: 23px; }
@@ -606,7 +643,8 @@ input:focus, textarea:focus {
     #wrap .swiper-pagination span {
       font-size: 13px;
       margin-left: 5px; }
-  #wrap .swiper-button-prev, #wrap .swiper-button-next {
+  #wrap .swiper-button-prev,
+  #wrap .swiper-button-next {
     bottom: 1vh;
     transform: scale(0.5); }
   #wrap .swiper-button-prev {
